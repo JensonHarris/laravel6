@@ -20,7 +20,7 @@ Route::get('hello',function (){
    return 'hello Jeason harris';
 });
 
-Route::get("/user", "admin\UserController@index");
+Route::get("/user", "Admin\UserController@index");
 
 //如果注册一个路由需要相应多种Http请求，可以通过match方法来实现
 Route::match(['get','post'],'foo',function (){
